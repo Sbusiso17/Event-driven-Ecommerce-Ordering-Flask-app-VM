@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Initialize SNS client
 sns = boto3.client('sns', region_name='us-east-1')  # Update with your region
 
-TOPIC_ARN = 'arn:aws:sns:eu-west-2:335871625378:order-notifications-topic'  # Replace with your SNS topic ARN
+TOPIC_ARN = 'arn:aws:sns:us-east-1:122803498731:order-notifications-topic'  # Replace with your SNS topic ARN
 
 @app.route('/')
 def index():
